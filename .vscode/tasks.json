@@ -16,7 +16,7 @@
         "command": "explorer.exe"
     },
 
-    "args": ["html/index.html"]
+    "args": ["index.html"]
 }
 
 // A task runner that calls the Typescript compiler (tsc) and

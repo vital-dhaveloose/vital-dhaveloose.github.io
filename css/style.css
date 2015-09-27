@@ -1,7 +1,50 @@
-.cv-title {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.cv-list {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.cv-header {
+    font-size: 14px;
+    margin: 5px 0 0 25px;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-style: normal;
+    margin: 20px 0 12px 0;
+}
+
+.ul-icon {
+     list-style-type: none;
+     padding: 0px;
+     margin: 0;
+ }
+
+.ul-icon li {
+	background-repeat: no-repeat;
+    background-position: 0px center; 
+    padding-left: 25px;
+    margin: 0 0 3px 0;
+}
+
+.name { background-image: url(../res/name.png); }
+.home { background-image: url(../res/home.png) }
+.phone { background-image: url(../res/phone.png); }
+.mail { background-image: url(../res/mail.png); }
+.skype { background-image: url(../res/skype.png); }
+.linkedin { background-image: url(../res/linkedin.png); }
+
+.birth { background-image: url(../res/birth.png); }
+.flag { background-image: url(../res/flag.png); }
+.gender { background-image: url(../res/gender.png); }
+.rings { background-image: url(../res/rings.png); }
+
+.study-specialization { background-image: url(../res/right-arrow.png); }
+.study-awards { background-image: url(../res/award.png); }
+.study-insitution { background-image: url(../res/academic_building.png); }
+.study-time {
+    float: right;
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;
+    margin-top: 4px;
 }

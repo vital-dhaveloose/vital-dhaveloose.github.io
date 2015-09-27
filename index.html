@@ -15,64 +15,59 @@
 	
 	<body>
 		
+		<div class="cv-header">
+			CURRICULUM VITAE - VITAL D'HAVELOOSE
+		</div>
+		
 		<div data-win-control="WinJS.UI.Pivot">
+			<!--   ALGEMEEN   /-->
 			<div class="listviewpivotitem" data-win-control="WinJS.UI.PivotItem" data-win-options="{'header': 'Algemeen'}" overflow:auto>
-				<h2 class="cv-title">Contactinfo</h2>
+				<div class="subtitle">Contactinfo</div>
 				
-				<ul class="cv-list">
-					<li>Naam: Vital D'haveloose</li>
-					<li>Adres: Kloosterhoek 78, 8930 Rekkem</li>
-					<li>GSM: 0494 99 40 22</li>
-					<li>e-mail: vital.dhaveloose@outlook.be</li>
+				<ul class="ul-icon">
+					<li class="name">Vital D'haveloose</li>
+					<li class="home">Kloosterhoek 78, 8930 Rekkem</li>
+					<li class="phone">0494 99 40 22</li>
+					<li class="mail"><a href="mailto:vital.dhaveloose@outlook.be">vital.dhaveloose@outlook.be</a></li>
+					<li class="skype"><a href="skype:vital.dhaveloose?call">vital.dhaveloose</a></li>
+					<li class="linkedin"><a href="http://be.linkedin.com/pub/vital-d-haveloose/a8/32a/9b" target="_blank">Vital D'haveloose</a></li>
 				</ul>
 				
-				<h2 class="cv-title">Persoonlijke informatie</h2>
+				<div class="subtitle">Persoonlijke informatie</div>
 				
-				<ul class="cv-list">
-					<li>Geboorte: 06/11/1992, Kortrijk</li>
-					<li>Nationaliteit: Belg</li>
-					<li>Geslacht: Man</li>
-					<li>Burgerlijke staat: ongehuwd</li>
-				</ul>
-			</div>
-			
-			<div class="listviewpivotitem" data-win-control="WinJS.UI.PivotItem" data-win-options="{'header': 'Studies en opleidingen'}" overflow:auto>
-				<ul class="cv-list">
-					<li><b>Master in de ingenieurswetenschappen: computerwetenschappen (Master of Science)</b>
-						<ul>
-							<li>Specialisatie Mens-Machine Interactie</li>
-							<li>Geslaagd met onderscheiding</li>
-							<li>KU Leuven</li>
-							<li>September 2013 - September 2015</li>
-						</ul>
-					</li>
-					
-					<li><b>Bachelor in de ingenieurswetenschappen</b>
-						<ul>
-							<li>Major: computerwetenschappen</li>
-							<li>Minor: elektrotechniek</li>
-							<li>KU Leuven, eerste twee jaar in KULAK Kortrijk</li>
-							<li>September 2010 - September 2014</li>
-						</ul>
-					</li>
-					
-					<li><b>TSO Industri&eumlle wetenschappen</b>
-						<ul>
-							<li>Laureaat</li>
-							<li>VTI St. Lucas, Menen</li>
-							<li>September 2004 - Juni 2010</li>
-						</ul>
-					</li>
+				<ul class="ul-icon">
+					<li class="birth">06-11-1992, Kortrijk</li>
+					<li class="flag">Belg</li>
+					<li class="gender">Man</li>
+					<li class="rings">Ongehuwd</li>
 				</ul>
 			</div>
 			
+			<!--   STUDIES EN OPLEIDINGEN   /-->
+			<div class="listviewpivotitem" data-win-control="WinJS.UI.PivotItem" data-win-options="{'header': 'Studies en opleidingen'}">
+				<div id="studies-list"	data-win-control= "WinJS.UI.Repeater"
+										data-win-options= "{data: studies}"
+										overflow:visible>
+					<div>
+						<div class="study-time" data-win-bind="textContent: time"></div>
+						<div class="subtitle" data-win-bind="textContent: name"></div>
+						<ul class="ul-icon">
+							<li class="study-specialization" data-win-bind="textContent: specialization"></li>
+							<li class="study-insitution" data-win-bind="textContent: institution"></li>
+							<li class="study-awards" data-win-bind="textContent: awards"></li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+			
+			<!--   ERVARING EN COMPETENTIES   /-->
 			<div class="listviewpivotitem"	data-win-control="WinJS.UI.PivotItem"
 											data-win-options="{'header': 'Ervaring en competenties'}"
 											overflow:auto>
 				
-				<h2 class="cv-title">Ervaring</h2>
+				<div class="subtitle">Ervaring</div>
 				
-				<ul class="cv-list">
+				<ul class="ul-icon">
 					<li><b>Masterproef: Integratie van online tools voor het werken aan projecten</b>
 						<ul>
 							<li>Onderzoeken van problemen bij het samenwerken van studenten aan groepswerk</li>
@@ -88,19 +83,19 @@
 					
 				</ul>
 				
-				<h2 class="cv-title">Competenties</h2>
+				<div class="subtitle">Competenties</div>
 				
-				<h3 class="cv-title">Talenkennis</h3>
+				<h3>Talenkennis</h3>
 				
-				<ul class="cv-list">
+				<ul class="ul-icon">
 					<li>Nederlands: Moedertaal, zeer goed</li>
 					<li>Engels: Zeer goed</li>
 					<li>Frans: Goed</li>
 				</ul>
 					
-				<h3 class="cv-title">Softwareontwikkeling</h3>
+				<h3>Softwareontwikkeling</h3>
 				
-				<ul class="cv-list">
+				<ul class="ul-icon">
 					<li>Zeer goed: Java, C#</li>
 					<li>Goed: C, Prolog, Haskell</li>
 					<li>Basis: Python, HTML, CSS, JavaScript</li>
@@ -108,28 +103,28 @@
 				
 				<p></p>
 				
-				<ul class="cv-list">
+				<ul class="ul-icon">
 					<li>OO ontwerp, ontwerppatronen (MVC, Visitor, ...)</li>
 					<li>Ontwikkeling van gebruiksvriendelijke GUI: <i>paper prototyping</i>, <i>iterative rapid prototyping</i>, SUS, interviews, <i>think aloud</i>, ...</li>
 					<li>Git version control system</li>
 					<li>IDE's: Eclipse, Visual Studio, Visual Paradigm</li>
 				</ul>
 					
-				<h3 class="cv-title">Kantoortoepassingen</h3>
+				<h3>Kantoortoepassingen</h3>
 				
-				<ul class="cv-list">
+				<ul class="ul-icon">
 					<li>Microsoft Office: Word, Excel, PowerPoint, Outlook, OneNote, Visio, Publisher, ...</li>
 					<li>LaTeX: "high-quality typesetting system"</li>
 					<li>SketchUp: 3D-pakket</li>
 				</ul>
-				
 			</div>
 			
+			<!--   EIGENSCHAPPEN EN HOBBIES   /-->
 			<div class="listviewpivotitem" data-win-control="WinJS.UI.PivotItem" data-win-options="{'header': 'Eigenschappen en hobbies'}" overflow:auto>
 				
-				<h2 class="cv-title">Eigenschappen</h2>
+				<div class="subtitle">Eigenschappen</div>
 				
-				<ul class="cv-list">
+				<ul class="ul-icon">
 					<li>Analytisch, nauwkeurig en ordelijk</li>
 					<li>Communicatief, empathisch en transparant</li>
 					<li>Creatief</li>
@@ -137,9 +132,9 @@
 					<li>Grappig (of poging tot)</li>
 				</ul>
 				
-				<h2 class="cv-title">Hobby's</h2>
+				<div class="subtitle">Hobby's</div>
 				
-				<ul class="cv-list">
+				<ul class="ul-icon">
 					<li>Actualiteit volgen: politiek, economie, wetenschap en technologie (specifieke interesse voor Microsoft ecosysteem)</li>
 					<li>Gamen, vooral simulatiegames: Minecraft, The Sims, SimCity, Kerbal Space Program</li>
 					<li>Eigen ideetjes over informatietechnologie uitwerken</li>

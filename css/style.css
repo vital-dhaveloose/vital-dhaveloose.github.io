@@ -7,6 +7,20 @@ html * {
     margin: 5px 0 0 25px;
 }
 
+.win-pivot .win-pivot-headers {
+    height: 52px;
+}
+
+.win-pivot .win-pivot-header, .win-pivot .win-pivot-header.win-pivot-header:hover:active {
+    font-size: 30px;
+    height: 40px;
+    margin: 6px 12px;
+}
+
+html.win-hoverable .win-pivot button.win-pivot-header:hover {
+    margin: 6px 12px;
+}
+
 .subtitle {
     font-size: 24px;
     font-style: normal;
